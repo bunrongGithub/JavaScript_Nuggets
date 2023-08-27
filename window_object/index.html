@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>window object </title>
+</head>
+<body>
+   <input onclick="msg()" type="button" value="delete record">
+   <input type="button" value="click me" onclick="message()">
+   <script type="text/javascript">
+      function msg(){
+         var v = confirm("Are you sure?");
+         
+         v == true ? alert('ok') : alert('cancel');
+      }
+      function message(){
+         var variable = prompt('Who are you?');
+         alert("I am " + variable);
+      }
+      document.writeln("<br/>navigator.appCodeName: "+navigator.appCodeName);  
+document.writeln("<br/>navigator.appName: "+navigator.appName);  
+document.writeln("<br/>navigator.appVersion: "+navigator.appVersion);  
+document.writeln("<br/>navigator.cookieEnabled: "+navigator.cookieEnabled);  
+document.writeln("<br/>navigator.language: "+navigator.language);  
+document.writeln("<br/>navigator.userAgent: "+navigator.userAgent);  
+document.writeln("<br/>navigator.platform: "+navigator.platform);  
+document.writeln("<br/>navigator.onLine: "+navigator.onLine); 
+   </script>
+</body>
+</html>
